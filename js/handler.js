@@ -1,4 +1,4 @@
-document.getElementById("contact_form").addEventListener("submit", function(event) {
+document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the form from submitting normally
 
   // Get form values
