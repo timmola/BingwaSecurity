@@ -38,32 +38,36 @@
       </div>
     </div>
    
-<div>   
 <style>
   .header_bottom {
     display: flex;
-    justify-content: flex-start; /* Align items to the left by default */
+    justify-content: center; /* Center align children */
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center; /* Center align children */
   }
 
   .header_bottom img {
-    max-width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
   }
 
-  @media screen and (max-width: 768px) {
-    /* Media query for screens with a maximum width of 768px (typical tablet and mobile sizes) */
-    .header_bottom {
-      justify-content: center; /* Center align items for smaller screens */
+  @media screen and (min-width: 768px) {
+    /* Media query for screens with a minimum width of 768px (typical tablet and desktop sizes) */
+    .logo-container {
+      justify-content: flex-start; /* Align items to the start (left) */
     }
   }
 </style>
 
 <div class="header_bottom">
-  <div>
-    <img src="images/logos.png" alt="" width="100" height="100">
+  <div class="logo-container">
+    <img src="images/logos.png" alt="">
   </div>
 </div>
-</div>
+
 
 
         <div class="container-fluid">
