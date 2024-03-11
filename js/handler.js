@@ -1,5 +1,6 @@
 document.getElementById("contactForm").addEventListener("submit", function(event) {
- 
+   event.preventDefault(); // Prevent the form from submitting normally
+
   // Get form values
   var fullName = document.getElementById("fullName").value;
   var email = document.getElementById("email").value;
