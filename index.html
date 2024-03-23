@@ -30,13 +30,57 @@
 </head>
 
 <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <style>
+    /* Add any custom styles here */
+    .hero_area {
+      position: relative;
+    }
+    .hero_bg_box {
+      width: 100%;
+    }
+    .img-slider {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- Header section starts -->
     <div class="hero_bg_box">
-      <div class="img-box">
-        <img src="images/5.jpg" alt="">
+      <div class="img-slider">
+        <div><img src="images/5.jpg" alt=""></div>
+        <div><img src="images/1.jpg" alt=""></div>
+        <div><img src="images/11.jpg" alt=""></div>
+        <!-- Add more slides here if needed -->
+        <!-- <div><img src="images/slider2.jpg" alt=""></div> -->
       </div>
     </div>
+
+    <!-- Your existing content goes here -->
+    <!-- Header section ends -->
+
+    <!-- Include Slick Slider JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Initialize image slider
+        $('.img-slider').slick({
+          autoplay: true,
+          autoplaySpeed: 3000, // Adjust autoplay speed as needed
+          arrows: false, // Hide navigation arrows
+          dots: false, // Hide dots
+          draggable: false, // Disable dragging
+          swipe: false, // Disable swiping
+          touchMove: false, // Disable touch move
+          pauseOnFocus: false, // Disable pause on focus
+          pauseOnHover: false // Disable pause on hover
+        });
+      });
+    </script>
+  </div>
    
    
       <div class="header_bottom">
