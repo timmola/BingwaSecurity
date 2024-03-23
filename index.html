@@ -81,70 +81,103 @@
 
     <!-- end header section -->
     
-    <!-- slider section -->
-    <section class=" slider_section ">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <style>
+    /* Add any custom styles here */
+    .hero_area {
+      position: relative;
+    }
+    .background-slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .background-slide {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+    .slider_section {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero_area">
+    <!-- Background image slider -->
+    <div class="background-slider">
+      <div class="background-slide" style="background-image: url('images/background1.jpg');"></div>
+      <div class="background-slide" style="background-image: url('images/background2.jpg');"></div>
+      <!-- Add more background slides here if needed -->
+    </div>
+
+    <!-- Your existing content goes here -->
+    <header>
+      <div class="hero_bg_box">
+        <div class="img-box">
+          <img src="images/5.jpg" alt="">
+        </div>
+      </div>
+      <div class="header_bottom">
+        <!-- Your header content goes here -->
+      </div>
+    </header>
+    <p><span style="color: red; font-style: italic;padding-left: 160px;font-size: 20px;">Secure For Sure</span></p>
+
+    <!-- Content slider section -->
+    <section class="slider_section">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                   <h1>
-                      Your Safety <br>
-                      <span>
-                        Our Responsibility
-                      </span>
-                    </h1>
-                    <p>
-                      We create unmatched safety and security coverage with greater cost efficiency and increased
-presence to deter and detect potential threats to your environment through superior service
-delivery.
-                    </p>
-                    <div class="btn-box">
-                      <a href="contact.html" class="btn-2">Get A Quote</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- Your first slider content goes here -->
           </div>
-          <div class="carousel-item ">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <h1>
-                      Your Safety <br>
-                      <span>
-                        Our Responsibility
-                      </span>
-                    </h1>
-                    <p>
-                      Our company values of Integrity, Teamwork, Attitude, Performance and Passion are carefully
-                      chosen and form the framework for our commitment to outstanding customer service as well as
-                      guiding our daily actions. 
-                    </p>
-                    <div class="btn-box">
-                 
-                      <a href="contact.html" class="btn-2">Get A Quote</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <!-- Your second slider content goes here -->
           </div>
-          </div>
+          <!-- Add more carousel items if needed -->
         </div>
+        <!-- Carousel indicators -->
         <div class="container idicator_container">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <!-- Add more indicators if needed -->
           </ol>
         </div>
       </div>
     </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Initialize content slider
+      $('#carouselExampleIndicators').slick({
+        // Your content slider options
+      });
+
+      // Initialize background image slider
+      $('.background-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000, // Adjust autoplay speed as needed
+        fade: true,
+        cssEase: 'linear',
+        arrows: false, // Hide navigation arrows
+        draggable: false, // Disable dragging
+        swipe: false, // Disable swiping
+        touchMove: false, // Disable touch move
+        pauseOnFocus: false, // Disable pause on focus
+        pauseOnHover: false // Disable pause on hover
+      });
+    });
+  </script>
     <!-- end slider section -->
   </div>
 
