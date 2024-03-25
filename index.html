@@ -27,16 +27,70 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <div class="hero_bg_box">
-      <div class="img-box">
-        <img src="images/5.jpg" alt="">
+  <style>
+    /* Optional: Custom styles for slider container */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide content vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="hero_area">
+          <!-- header section starts -->
+          <div class="hero_bg_box">
+            <div class="img-box">
+              <img src="images/1.jpg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="swiper-slide">
+        <div class="hero_area">
+          <!-- header section starts -->
+          <div class="hero_bg_box">
+            <div class="img-box">
+              <img src="images/2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Link to Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+      autoplay: {
+        delay: 5000, // Auto play interval in milliseconds
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
    
    
       <div class="header_bottom">
