@@ -72,6 +72,34 @@ body {
           transform: translateX(-50%);
 }
 
+.hero_area {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust the height as needed */
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Set a lower z-index to make sure content is above */
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+            z-index: 1; /* Ensure the buttons are above the slider */
+        }
 
 
 .sub_page .hero_area {
