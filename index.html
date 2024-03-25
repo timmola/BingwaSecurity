@@ -36,165 +36,129 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Swiper demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<!-- Link Swiper's CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .swiper-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .swiper-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+            z-index: 1;
+        }
+
+        /* Additional styles for other content */
+        .main-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-	<div class="swiper-container gallery-top">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
-				<div class="swiper-content">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <h1>
-                      Your Safety <br>
-                      <span>
-                        Our Responsibility
-                      </span>
-                    </h1>
-                    <p>
-                      Our company values of Integrity, Teamwork, Attitude, Performance and Passion are carefully
-                      chosen and form the framework for our commitment to outstanding customer service as well as
-                      guiding our daily actions. 
-                    </p>
-                    <div class="btn-box">
-                 
-                      <a href="contact.html" class="btn-2">Get A Quote</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
-						<div class="swiper-content">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <h1>
-                      Your Safety <br>
-                      <span>
-                        Our Responsibility
-                      </span>
-                    </h1>
-                    <p>
-                      Our company values of Integrity, Teamwork, Attitude, Performance and Passion are carefully
-                      chosen and form the framework for our commitment to outstanding customer service as well as
-                      guiding our daily actions. 
-                    </p>
-                    <div class="btn-box">
-                 
-                      <a href="contact.html" class="btn-2">Get A Quote</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)">
-						<div class="swiper-content">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <h1>
-                      Your Safety <br>
-                      <span>
-                        Our Responsibility
-                      </span>
-                    </h1>
-                    <p>
-                      Our company values of Integrity, Teamwork, Attitude, Performance and Passion are carefully
-                      chosen and form the framework for our commitment to outstanding customer service as well as
-                      guiding our daily actions. 
-                    </p>
-                    <div class="btn-box">
-                 
-                      <a href="contact.html" class="btn-2">Get A Quote</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-6.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-7.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-8.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-9.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
-			</div>
-		</div>
-		<!-- Add Arrows -->
-		<div class="swiper-button-next swiper-button-white"></div>
-		<div class="swiper-button-prev swiper-button-white"></div>
-	</div>
-	<div class="swiper-container gallery-thumbs">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-6.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-7.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-8.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-9.jpg)">
-			</div>
-			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
-			</div>
-		</div>
-	</div>
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Your main content goes here -->
+        <h1>Welcome to the Swiper Demo</h1>
+        <p>This is the main content of your page.</p>
+    </div>
 
+    <!-- Swiper slider as background -->
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"
+                style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
+                <div class="swiper-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>Your Safety <br> <span> Our Responsibility </span></h1>
+                                    <p>Our company values of Integrity, Teamwork, Attitude, Performance and
+                                        Passion are carefully chosen and form the framework for our commitment to
+                                        outstanding customer service as well as guiding our daily actions.</p>
+                                    <div class="btn-box">
+                                        <a href="contact.html" class="btn-2">Get A Quote</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more slides with different content -->
+            <!-- Example:
+            <div class="swiper-slide"
+                style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
+                <div class="swiper-content">
+                    <!-- Content for slide 2 -->
+                </div>
+            </div>
+            -->
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
 
-	<!-- Swiper JS -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-	<!-- Initialize Swiper -->
-	<script>
-		var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs
-      }
-    });
-	</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            }
+        });
+    </script>
+>
+
 
  
    
