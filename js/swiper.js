@@ -1,12 +1,9 @@
-
-    // Initialize Swiper
-    var swiper = new Swiper('.swiper-container', {
-      // Optional parameters
-      loop: true,
-      autoplay: {
-        delay: 1000, // Auto play interval in milliseconds
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+var mySwiper = new Swiper('.swiper-container', {
+  	autoplay: {
+		delay: 1000,
+  	},
+  	direction: 'horizontal',
+	effect: 'fade',
+	loop: true,
+	speed: 1000,
+})
