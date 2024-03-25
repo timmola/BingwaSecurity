@@ -72,19 +72,7 @@ body {
           transform: translateX(-50%);
 }
 
-/*header section*/
-.hero_area {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-  .swiper-container {
+.swiper-container {
       width: 100%;
       height: 100%;
     }
@@ -97,24 +85,22 @@ body {
       justify-content: center;
       align-items: center;
     }
-.hero_bg_box {
-  position: relative; /* Change position to relative */
-  width: 100%;
-  height: 100%;
-}
+    .hero_bg_box {
+      position: relative; /* Change position to relative */
+      width: 100%;
+      height: 100%;
+    }
 
-.hero_bg_box .img-box {
-  width: 100%;
-  height: 100%; /* Adjust height to 100% */
-}
+    .hero_bg_box .img-box {
+      width: 100%;
+      height: 100%; /* Adjust height to 100% */
+    }
 
-.hero_bg_box .img-box img {
-  width: 100%; /* Change min-width to width */
-  height: 100%; /* Change min-height to height */
-  object-fit: cover; /* Maintain aspect ratio and cover entire box */
-}
-
-/* Remove .hero_bg_box::before styling as it's not necessary for the slider */
+    .hero_bg_box .img-box img {
+      width: 100%; /* Change min-width to width */
+      height: 100%; /* Change min-height to height */
+      object-fit: cover; /* Maintain aspect ratio and cover entire box */
+    }
 
 
 .sub_page .hero_area {
