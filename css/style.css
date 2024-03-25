@@ -72,28 +72,6 @@ body {
           transform: translateX(-50%);
 }
 
-.swiper-container {
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	.image-container {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 100%;
-		transition: 3s ease-out;
-		transform: scale(1.1);
-	}
-	.swiper-slide {
-		&.swiper-slide-active {
-			.image-container {
-				transform: scale(1);
-			}
-		}
-	}
-}
 
 
 .sub_page .hero_area {
