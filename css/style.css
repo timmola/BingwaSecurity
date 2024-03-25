@@ -72,34 +72,54 @@ body {
           transform: translateX(-50%);
 }
 
+/*header section*/
 .hero_area {
-            position: relative;
-            width: 100%;
-            height: 100vh; /* Adjust the height as needed */
-            overflow: hidden;
-        }
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
 
-        .swiper-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0; /* Set a lower z-index to make sure content is above */
-        }
+.hero_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-        .swiper-slide {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-        }
+.hero_bg_box .img-box {
+  width: 100%;
+}
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            color: #fff;
-            z-index: 1; /* Ensure the buttons are above the slider */
-        }
+.hero_bg_box .img-box img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero_bg_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.35)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.35));
+}
 
 .sub_page .hero_area {
   min-height: auto;
