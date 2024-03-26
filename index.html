@@ -74,7 +74,10 @@
     
     <!-- slider section -->
     
- <!DOCTYPE html>
+To use your own pictures in the above HTML structure, you can simply replace the URLs in the `style` attribute of each `div` with the class `carousel-item` and `carousel-item` class. Here's how you can modify the HTML to use your own images:
+
+```html
+<!DOCTYPE html>
 <html>
 <head>
     <title>Responsive Hero Slider With Bootstrap 4</title>
@@ -93,14 +96,44 @@
         <li data-target="#carousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active boat" style="background-image: url(/image1.jpg');">
-          <!-- Content for the first slide -->
+        <div class="carousel-item active boat" style="background-image: url('images/1.jpg');">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">Boat Excursions</h2>
+                  <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                  <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item sea" style="background-image: url('path/to/your/image2.jpg');">
-          <!-- Content for the second slide -->
+        <div class="carousel-item sea" style="background-image: url('images/11.jpg');">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">Discover the canyon by the sea</h2>
+                  <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                  <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item river" style="background-image: url('path/to/your/image3.jpg');">
-          <!-- Content for the third slide -->
+        <div class="carousel-item river" style="background-image: url('images/13.jpg');">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">Explore the river valley</h2>
+                  <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                  <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -118,7 +151,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+<script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
  
 </body>
 </html>
