@@ -13,19 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
-}
-
-#carousel .carousel-item.boat {
-  background-image: url("images/images/1.jpg");
-}
-
-#carousel .carousel-item.sea {
-  background-image: url("images/images/11.jpg");
-}
-
-#carousel .carousel-item.river {
-  background-image: url("images/images/13.jpg");
-}
 
 #carousel .carousel-item {
   height: 100vh;
