@@ -73,90 +73,53 @@ body {
 }
 
 /*header section*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-body {
-  background: #eee;
+.hero_area {
   min-height: 100vh;
-  width:100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-}  
-#carousel .carousel-item.boat{
-  background-image:url("images/bg-1.jpg");
-}
-#carousel .carousel-item.sea{
-  background-image:url("images/bg-2.jpg");
-}
-#carousel .carousel-item.river{
-  background-image:url("images/bg-3.jpg");
-}
-#carousel .carousel-item{
-  height:100vh;
-  width:100%;
-  min-height:350px;
-  background:no-repeat center center scroll;
-  background-size:cover;
-}
-#carousel .carousel-inner .carousel-item{
-  transition:-webkit-transform 2s ease;
-  transition:transform 2s ease;
-  transition:transform 2s ease, -webkit-transform 2s ease;
-}
-#carousel .carousel-item .caption{
-  background:rgba(0,0,0,0.5);
-  padding:40px;
-  color:white;
-  animation-duration: 1s;
-  animation-delay: 2s;
-}
-#carousel .caption h2{
-  animation-duration: 1s;
-  animation-delay: 2s;
-}
-#carousel .caption p{
-  animation-duration: 1s;
-  animation-delay: 2.2s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
 }
 
-#carousel .caption a{
-  animation-duration: 1s;
-  animation-delay: 2.4s;
-}
-.delicious-btn{
-  display: inline-block;
-  min-width:160px;
-  height:60px;
-  color:#fff;
-  border:none;
-  border-left:3px solid #1c8314;
-  border-radius: 0;
-  padding:0 30px;
-  font-size:16px;
-  line-height:58px;
-  font-weight:600;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  text-transform: capitalize;
-  background:#40ba37;
-}
-.delicious-btn:hover,
-.delicious-btn:active,
-.delicious-btn:focus{
-  font-size:16px;
-  font-weight: 600;
-  color:#fff;
-  background:#1c8314;
-  border-color:#40ba37
+.hero_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-  
+.hero_bg_box .img-box {
+  width: 100%;
+}
+
+.hero_bg_box .img-box img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero_bg_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.35)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.35));
+}
 
 .sub_page .hero_area {
   min-height: auto;
