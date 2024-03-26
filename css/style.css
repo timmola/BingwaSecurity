@@ -1,4 +1,10 @@
 @import url("font-awesome.min.css");
+.header_bottom {
+    width: 100%;
+    height: auto;
+    background-color: #fff; /* Adjust as needed */
+    padding: 20px 0; /* Adjust as needed */
+}
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
@@ -244,7 +250,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler {
-  outline: none;
+  floqat: right;
 }
 
 .custom_nav-container .navbar-toggler {
